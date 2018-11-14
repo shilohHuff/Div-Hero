@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>        
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.js"></script>
+        
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.css" />
+    
+        <link rel="manifest" href="/manifest.json">    
+    </head>
+    <body>
+        <div id="world"></div>
+        <div id="auth"></div>
+        <div class="ui-container">
+            <div id="instructables">
+                <h1>WASD to Move</h1>
+                <h1>Spacebar to Jump</h1>
+                <h1>Shift to Sprint </h1>
+                <h1>Left-Click + Drag to Add Blocks</h1>
+            </div>
+            <button id="respawn-btn" type="button">Respawn</button>
+        </div>
+        <div id="spawn-time-container">
+            <div>Spawning in:</div>
+            <div id="spawn-time"></div>
+        </div>
+        
+        <script src="bundle.js"></script>
+    </body>
+</html>
