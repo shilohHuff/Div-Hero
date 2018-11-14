@@ -1,0 +1,39 @@
+image: docker.repo.usaa.com/usaa/node-ci:latest
+
+cache:
+  paths:
+  - node_modules/
+
+stages:
+- test
+- build
+- deploy
+
+before_script:
+- npm prune
+- npm install
+
+test:
+  tags:
+  - docker
+  script:
+  - npm run lint
+
+build:
+  tags:
+  - docker
+  stage: build
+  script:
+  - npm install
+
+deploy:
+  tags:
+  - docker
+  stage: deploy
+  script:
+  - find .
+  artifacts:
+    paths:
+    - dist
+  only:
+  - master

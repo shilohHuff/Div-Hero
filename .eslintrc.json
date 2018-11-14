@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "usaa"
+    ],
+    "rules": {
+        "no-nested-ternary": 0,
+        "no-bitwise": 0
+    }
+}

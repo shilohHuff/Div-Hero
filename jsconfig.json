@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "checkJs": true,
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "module": "commonjs"
+    },
+    "exclude": [
+        "reports", ".nyc_output", "docs", "dist", "build"
+    ]
+}
