@@ -7,8 +7,8 @@ import Settings from './Settings';
 const config = {
     apiKey: 'AIzaSyBk1wB1Owc9ZGpOfK413ODSsr7mKjoUoeI',
     authDomain: 'div-hero.firebaseapp.com',
-    databaseURL: 'https://div-hero.firebaseio.com',
-    projectId: 'div-hero',
+    databaseURL: 'https://div-hero-9b356-default-rtdb.firebaseio.com/',
+    projectId: 'div-hero-9b356',
     storageBucket: '',
     messagingSenderId: '594674907779'
 };
